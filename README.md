@@ -1,0 +1,2 @@
+# norme
+Norminette codestyle
