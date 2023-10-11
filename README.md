@@ -1,25 +1,24 @@
 ## Norminette code style
-Основное ([здесь](https://github.com/gerus66/norme/blob/master/norme.en.pdf) подробнее):
-### Файл *.c
-* содержит не более 5 функций
-* все строки не более 80 символов
+_[full version in pdf](https://github.com/gerus66/norme/blob/master/norme.en.pdf)_
+### Each *.c file
+* has at most 5 function definitions
 
-### Функция
-* не длиннее 25 строк
-* не более 4 входных переменных 
-* не более 5 локальных переменных
+### Each function
+* must be no longer than 25 lines
+* can take at most 4 parameters
+* can declare at most 5 variables
 
-### Переменные
-* объявляются в начале функции
-* не инициализируются при определении
+### Each variable
+* should be declared at the beginning of function
+* one declaration per line
+* can't be assigned on declaration 
 
-### Синтаксис
-* скобки на отдельной строке
-* отступы табуляцией
+### Each line
+* must be at most 80 columns wide
 
-### Запреты на использование
-* `for` `goto` `swith/case`
-* вложенных тернарных операторов
-* вложенных макросов
-* глобальных переменных (в большинстве проектов)
-* библиотек кроме _stdlib_ (и собственных, написанных на ее основе)
+### Forbidden
+* `for`, `goto`, `swith/case`
+* nested ternary operators
+* global variables
+* any libraries
+* any fuctions but a few basics, like _malloc()_, _free()_, _write()_, _read()_
