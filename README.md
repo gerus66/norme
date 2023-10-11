@@ -1,4 +1,5 @@
 ## Norminette code style
+Mandatory codestyle for all projects, written in `C language` at Ecole 42. \
 _[full version in pdf](https://github.com/gerus66/norme/blob/master/norme.en.pdf)_
 ### Each *.c file
 * has at most 5 function definitions
